@@ -1,0 +1,47 @@
+#gameContainer {
+    width: 1000px;
+    height: 720px;
+    background-image: url(img/Bakgrunnsbilde.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+button{
+    cursor:pointer;
+}
+
+#carDiv {
+    background-color: black;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 345px;
+    height: 80px;
+    width: 100px;
+    border-radius: 20px;
+    animation-duration: 0.5s;
+    animation-name: driveCarY;
+    animation-iteration-count: infinite;
+}
+
+#buttonDiv {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 200px;
+}
+.randomEncounterImg{
+    height: 70px;
+    width: 50px;
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 345px;
+
+}
+
+@keyframes driveCarY {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
